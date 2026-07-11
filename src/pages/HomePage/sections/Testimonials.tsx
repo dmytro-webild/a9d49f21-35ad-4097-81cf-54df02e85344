@@ -18,7 +18,7 @@ export default function TestimonialsSection(): React.JSX.Element {
               name: "Sarah J.",
               role: "Homeowner",
               quote: "Amerigrass saved me hours every week. My lawn looks incredible!",
-              imageSrc: "http://img.b2bpic.net/free-photo/woman-finding-out-she-s-expecting-going-be-mother_23-2150167530.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783795196766-a1gmi7wn.jpg",
             },
             {
               name: "Mike D.",
