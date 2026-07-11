@@ -128,48 +128,6 @@ export default function HomePage() {
     </SectionErrorBoundary>
   </div>
 
-  <div id="pricing" data-section="pricing">
-    <SectionErrorBoundary name="pricing">
-          <PricingHighlightedCards
-      tag="Subscription Plans"
-      title="Transparent Pricing"
-      description="Choose the tier that fits your lawn size. Save time, save money."
-      plans={[
-        {
-          tag: "Standard",
-          price: "$45/mo",
-          description: "For standard residential lawns.",
-          features: [
-            "Weekly Mowing",
-            "Professional Edging",
-            "Reliable Schedule",
-          ],
-          primaryButton: {
-            text: "Sign Up",
-            href: "#contact",
-          },
-        },
-        {
-          tag: "Premium",
-          price: "$65/mo",
-          description: "Comprehensive lawn health package.",
-          features: [
-            "Unlimited Mowing",
-            "Weed Control",
-            "Fertilizer Services",
-            "Priority Scheduling",
-          ],
-          highlight: "Best Value",
-          primaryButton: {
-            text: "Sign Up",
-            href: "#contact",
-          },
-        },
-      ]}
-      textAnimation="slide-up"
-    />
-    </SectionErrorBoundary>
-  </div>
 
   <div id="testimonials" data-section="testimonials">
     <SectionErrorBoundary name="testimonials">
