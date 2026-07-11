@@ -10,7 +10,7 @@ export default function HeroSection(): React.JSX.Element {
         secondaryButton={{"text":"Call 321-371-1673","href":"tel:321-371-1673"}}
         description="Unlimited Mowing | Professional Edging | Weed Control | Reliable Scheduling. Starting Rates from just $45/month for standard lawns. Regular Rate: $60/month."
         title="WHY CHOOSE AMERIGRASS?"
-        imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783795063178-o7g7wi98.jpg"
+        imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783796753171-0mqaklou.jpg"
         tag="Premium Lawn Care Subscription"
         textAnimation="slide-up"
         primaryButton={{"text":"Sign Up Today","href":"#contact"}}
