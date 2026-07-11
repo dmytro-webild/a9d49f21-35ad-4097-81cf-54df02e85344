@@ -14,7 +14,7 @@ export default function ContactSection(): React.JSX.Element {
         tag="Start Your Service"
         inputs={[{"name":"name","placeholder":"Your Name","required":true,"type":"text"},{"name":"email","required":true,"placeholder":"Your Email","type":"email"},{"type":"tel","placeholder":"Phone Number","required":false,"name":"phone"}]}
         title="Get a Free Quote Today"
-        description="Call us at 321-371-1673 or email amerigrasscfl@gmail.com for a free quote or sign up today online."
+        description="Call us at 407-498-6541 or email amerigrasscfl@gmail.com for a free quote or sign up today online."
       />
     </div>
   );
