@@ -94,7 +94,7 @@ export default function Layout() {
           href: "#",
         },
       ]}
-      imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783785580227-3m2sd2nr.jpg"
+      imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783785580227-3m2sd2nr.jpg?_wi=2"
     />
       </SectionErrorBoundary>
     </StyleProvider>
