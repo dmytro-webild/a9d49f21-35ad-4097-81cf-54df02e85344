@@ -243,14 +243,14 @@ export default function HomePage() {
     <SectionErrorBoundary name="contact">
           <ContactCta
       tag="Start Your Service"
-      text="Call us at 321-371-1673 for a free quote or sign up today online."
+      text="Call us at 321-371-1673 or email amerigrasscfl@gmail.com for a free quote or sign up today online."
       primaryButton={{
         text: "Call Now",
         href: "tel:3213711673",
       }}
       secondaryButton={{
-        text: "Contact Support",
-        href: "mailto:support@amerigrass.com",
+        text: "Email Us",
+        href: "mailto:amerigrasscfl@gmail.com",
       }}
       textAnimation="fade-blur"
     />
