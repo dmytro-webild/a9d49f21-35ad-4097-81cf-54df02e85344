@@ -13,7 +13,7 @@ export default function HeroSection(): React.JSX.Element {
         imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783798086871-wv8aa2nd.png"
         tag="Premium Lawn Care Subscription"
         textAnimation="slide-up"
-        primaryButton={{"text":"Sign Up Today","href":"#contact"}}
+        primaryButton={{"text":"Sign Up Today","href":"https://square.link/u/igNAU7iJ"}}
       />
     </div>
   );
