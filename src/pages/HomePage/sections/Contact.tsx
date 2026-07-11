@@ -7,7 +7,7 @@ export default function ContactSection(): React.JSX.Element {
   return (
     <div data-webild-section="contact" data-section="contact" id="contact">
       <ContactSplitForm
-        imageSrc="http://img.b2bpic.net/free-photo/joyful-businesswoman-holding-tablet_74855-2024.jpg"
+        imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783797580612-sfro53pi.png"
         textarea={{"required":true,"placeholder":"How can we help you?","name":"message","rows":4}}
         textAnimation="fade-blur"
         buttonText="Submit"
