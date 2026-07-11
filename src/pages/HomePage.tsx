@@ -85,7 +85,7 @@ export default function HomePage() {
           <FeaturesImageBento
       tag="Our Work"
       title="Precision and Care"
-      description="See the results of our professional lawn maintenance services in action."
+      description="See the results of our professional lawn maintenance services in action. We service all of Central Florida and Tampa."
       items={[
         {
           title: "Healthy Growth",
