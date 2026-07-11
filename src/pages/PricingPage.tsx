@@ -1,129 +1,28 @@
-import { routes } from "@/routes";
-import NavbarCentered from "@/components/ui/NavbarCentered";
-import HeroBrand from "@/components/sections/hero/HeroBrand";
-import PricingSimpleCards from "@/components/sections/pricing/PricingSimpleCards";
-import FaqSimple from "@/components/sections/faq/FaqSimple";
-import FooterSimple from "@/components/sections/footer/FooterSimple";
+import Button from "@/components/ui/Button";
+import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import AvatarGroup from "@/components/ui/AvatarGroup";
+import { Check } from "lucide-react";
+import GridOrCarousel from "@/components/ui/GridOrCarousel";
+import { cls } from "@/lib/utils";
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <NavbarCentered
-        logo="Webild"
-        navItems={routes.map((r) => ({ name: r.label, href: r.path }))}
-        ctaButton={{ text: "Get Started", href: "/signup" }}
-      />
-      
-      <main className="flex-grow">
-        <HeroBrand
-          brand="Pricing"
-          description="Simple, transparent pricing that grows with your business. No hidden fees, no surprises."
-          primaryButton={{ text: "View Plans", href: "#plans" }}
-          secondaryButton={{ text: "Contact Sales", href: "/contact" }}
-          textAnimation="fade-blur"
-        />
-
-        <div id="plans">
-          <PricingSimpleCards
-            tag="Plans"
-            title="Choose the right plan for you"
-            description="Whether you're just starting out or scaling up, we have a plan that fits your needs."
-            textAnimation="fade-blur"
-            plans={[
-              {
-                tag: "Starter",
-                price: "$0",
-                description: "Perfect for individuals and small side projects.",
-                features: [
-                  "Up to 3 projects",
-                  "Basic analytics",
-                  "Community support",
-                  "Standard integrations"
-                ],
-                primaryButton: { text: "Start for free", href: "/signup" }
-              },
-              {
-                tag: "Pro",
-                price: "$29",
-                description: "Ideal for growing teams and professional creators.",
-                features: [
-                  "Unlimited projects",
-                  "Advanced analytics dashboard",
-                  "Priority email support",
-                  "Custom domains",
-                  "Team collaboration tools"
-                ],
-                primaryButton: { text: "Get Pro", href: "/signup" }
-              },
-              {
-                tag: "Enterprise",
-                price: "Custom",
-                description: "For large organizations with complex requirements.",
-                features: [
-                  "Everything in Pro",
-                  "Dedicated success manager",
-                  "SSO & advanced security",
-                  "Custom SLA",
-                  "On-premise deployment options"
-                ],
-                primaryButton: { text: "Contact Sales", href: "/contact" }
-              }
-            ]}
-          />
-        </div>
-
-        <FaqSimple
-          tag="FAQ"
-          title="Frequently asked questions"
-          description="Everything you need to know about the product and billing."
-          textAnimation="fade-blur"
-          items={[
-            {
-              question: "Can I change my plan later?",
-              answer: "Absolutely. You can upgrade or downgrade your plan at any time from your account settings. Prorated charges will be applied automatically."
-            },
-            {
-              question: "What payment methods do you accept?",
-              answer: "We accept all major credit cards including Visa, Mastercard, and American Express. For Enterprise plans, we also support invoicing and wire transfers."
-            },
-            {
-              question: "Do you offer a free trial for the Pro plan?",
-              answer: "Yes, we offer a 14-day free trial on our Pro plan so you can test out all the premium features before committing."
-            },
-            {
-              question: "What happens if I exceed my plan limits?",
-              answer: "We'll notify you when you're approaching your limits. If you exceed them, your service won't be interrupted immediately, but we'll reach out to discuss upgrading to a plan that better suits your usage."
-            }
-          ]}
-        />
-      </main>
-
-      <FooterSimple
-        brand="Webild"
-        copyright="© 2024 Webild Inc. All rights reserved."
-        columns={[
-          {
-            title: "Product",
-            items: [
-              { label: "Features", href: "/features" },
-              { label: "Pricing", href: "/pricing" },
-              { label: "Changelog", href: "/changelog" }
-            ]
-          },
-          {
-            title: "Company",
-            items: [
-              { label: "About Us", href: "/about" },
-              { label: "Careers", href: "/careers" },
-              { label: "Contact", href: "/contact" }
-            ]
-          }
-        ]}
-        links={[
-          { label: "Privacy Policy", href: "/privacy" },
-          { label: "Terms of Service", href: "/terms" }
-        ]}
-      />
-    </div>
+    <>
+      <div data-webild-section="HeroBillboard"><section aria-label="Hero section" className="relative pt-25 pb-20 md:pt-30"><HeroBackgroundSlot /><div className="flex flex-col gap-12 md:gap-15 w-content-width mx-auto"><div className="flex flex-col items-center gap-3 text-center"><AvatarGroup avatarsSrc={["https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg","https://img.freepik.com/free-photo/close-up-portrait-smiling-young-woman-looking-camera_171337-17994.jpg","https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg"]} label="Trusted by Sarah J., Mike D., and many more" className="mb-1" /><TextAnimation text="Simple, No-Contract Pricing" variant="slide-up" gradientText={true} tag="h1" className="md:max-w-8/10 text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Choose a monthly subscription plan that works for your lawn and your life. No hidden fees, no long-term contracts—just reliable professional service." variant="slide-up" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button text="View Plans" href="#plans" variant="primary" /><Button text="Get an Estimate" href="#estimate" variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="fade" delay={0.2} className="w-full p-2 xl:p-3 2xl:p-4 card rounded overflow-hidden"><ImageOrVideo imageSrc="https://img.freepik.com/free-photo/beautiful-suburban-house-with-green-lawn_1150-17551.jpg" className="aspect-4/5 md:aspect-video" /></ScrollReveal></div></section></div>
+      <div data-webild-section="PricingHighlightedCards"><section aria-label="Pricing section" className="py-20"><div className="flex flex-col gap-8 md:gap-10"><div className="flex flex-col items-center w-content-width mx-auto gap-2"><div className="px-3 py-1 mb-1 text-sm card rounded w-fit"><p>Pricing Plans</p></div><TextAnimation text="Lawn Care That Fits Your Budget" variant="fade-blur" gradientText={true} tag="h2" className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance" /><TextAnimation text="Subscribe to professional lawn maintenance delivered monthly. No contracts, no surprises—just a healthier lawn." variant="fade-blur" gradientText={false} tag="p" className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance" /><div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3"><Button variant="primary" /><Button variant="secondary" animationDelay={0.1} /></div></div><ScrollReveal variant="slide-up"><GridOrCarousel><div key="Essential" className="flex flex-col h-full"><div className="px-5 py-2 text-base invisible">placeholder</div><div className="flex flex-col items-center gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 flex-1 card text-center rounded"><div className="flex flex-col gap-1"><span className="text-5xl md:text-6xl font-semibold">$49/mo</span><span className="text-base font-medium">Essential</span></div><div className="h-px w-full bg-foreground/20" /><div className="flex flex-col gap-3 w-full"><div key="Bi-weekly mowing" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Bi-weekly mowing</span></div>
+<div key="Edge trimming" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Edge trimming</span></div>
+<div key="Clipping cleanup" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Clipping cleanup</span></div></div><div className="flex flex-col gap-3 w-full mt-auto"><Button text="Get Started" href="/signup?plan=essential" variant="primary" className="w-full" /></div></div></div>
+<div key="Premium" className="flex flex-col h-full"><div className="px-5 py-2 text-base text-center primary-button rounded-t text-primary-cta-text">Most Popular</div><div className="flex flex-col items-center gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 flex-1 card text-center rounded-t-none rounded-b"><div className="flex flex-col gap-1"><span className="text-5xl md:text-6xl font-semibold">$89/mo</span><span className="text-base font-medium">Premium</span></div><div className="h-px w-full bg-foreground/20" /><div className="flex flex-col gap-3 w-full"><div key="Weekly mowing" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Weekly mowing</span></div>
+<div key="Edge trimming & blowing" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Edge trimming & blowing</span></div>
+<div key="Seasonal fertilization" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Seasonal fertilization</span></div>
+<div key="Weed spot-treatment" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Weed spot-treatment</span></div></div><div className="flex flex-col gap-3 w-full mt-auto"><Button text="Get Premium" href="/signup?plan=premium" variant="primary" className="w-full" /></div></div></div>
+<div key="Complete" className="flex flex-col h-full"><div className="px-5 py-2 text-base invisible">placeholder</div><div className="flex flex-col items-center gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 flex-1 card text-center rounded"><div className="flex flex-col gap-1"><span className="text-5xl md:text-6xl font-semibold">$149/mo</span><span className="text-base font-medium">Complete</span></div><div className="h-px w-full bg-foreground/20" /><div className="flex flex-col gap-3 w-full"><div key="Weekly mowing & edging" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Weekly mowing & edging</span></div>
+<div key="Premium fertilization program" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Premium fertilization program</span></div>
+<div key="Shrub & bush trimming" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Shrub & bush trimming</span></div>
+<div key="Spring & Fall cleanups" className="flex items-start gap-3"><div className="flex items-center justify-center shrink-0 size-6 primary-button rounded"><Check className="size-3 text-primary-cta-text" strokeWidth={2} /></div><span className="text-base text-left">Spring & Fall cleanups</span></div></div><div className="flex flex-col gap-3 w-full mt-auto"><Button text="Get Complete" href="/signup?plan=complete" variant="primary" className="w-full" /></div></div></div></GridOrCarousel></ScrollReveal></div></section></div>
+    </>
   );
 }
