@@ -55,49 +55,51 @@ export default function Layout() {
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
-        <FooterSimpleMedia
-      brand="AMERIGRASS"
-      columns={[
-        {
-          title: "Company",
-          items: [
-            {
-              label: "About",
-              href: "#about",
-            },
-            {
-              label: "Careers",
-              href: "#",
-            },
-          ],
-        },
-        {
-          title: "Service",
-          items: [
-            {
-              label: "Plans",
-              href: "#pricing",
-            },
-            {
-              label: "Support",
-              href: "#contact",
-            },
-          ],
-        },
-      ]}
-      copyright="© 2024 Amerigrass. Licensed & Insured."
-      links={[
-        {
-          label: "Privacy Policy",
-          href: "#",
-        },
-        {
-          label: "Terms of Service",
-          href: "#",
-        },
-      ]}
-      imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783795507005-7dakxe9t.jpg"
-    />
+        <div className="[&_video]:hidden [&_img]:hidden">
+          <FooterSimpleMedia
+            videoSrc=""
+            brand="AMERIGRASS"
+            columns={[
+              {
+                title: "Company",
+                items: [
+                  {
+                    label: "About",
+                    href: "#about",
+                  },
+                  {
+                    label: "Careers",
+                    href: "#",
+                  },
+                ],
+              },
+              {
+                title: "Service",
+                items: [
+                  {
+                    label: "Plans",
+                    href: "#pricing",
+                  },
+                  {
+                    label: "Support",
+                    href: "#contact",
+                  },
+                ],
+              },
+            ]}
+            copyright="© 2024 Amerigrass. Licensed & Insured."
+            links={[
+              {
+                label: "Privacy Policy",
+                href: "#",
+              },
+              {
+                label: "Terms of Service",
+                href: "#",
+              },
+            ]}
+          />
+        </div>
       </SectionErrorBoundary>
     </StyleProvider>
   );
