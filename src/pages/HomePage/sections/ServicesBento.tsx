@@ -113,17 +113,7 @@ const ServicesBentoInline = () => {
           )}
         </div>
 
-        <div className="w-content-width mx-auto flex flex-col items-center gap-8 mb-4 md:mb-8">
-          <img 
-            src="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783873541218-gtbbtaeo.jpg" 
-            alt="Junk-It Logo" 
-            className="w-full max-w-3xl rounded-lg shadow-md" 
-          />
-          <img 
-            src="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783873541219-vi26xijc.png" 
-            alt="Junk-It Flyer" 
-            className="w-full max-w-3xl rounded-lg shadow-md" 
-          />
+        <div className="w-content-width mx-auto flex justify-center mb-4 md:mb-8">
           <img 
             src="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783873288884-pi06ag5p.png" 
             alt="Amerigrass Summer Special" 
