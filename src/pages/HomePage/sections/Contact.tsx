@@ -10,7 +10,8 @@ export default function ContactSection(): React.JSX.Element {
         imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783797580612-sfro53pi.png"
         textarea={{"required":true,"placeholder":"How can we help you?","name":"message","rows":4}}
         textAnimation="fade-blur"
-        buttonText="Submit"
+        buttonText="Get a Quote"
+        buttonLink="https://checkout.square.site/merchant/MLFRQZQ7JR2T8/checkout/WOVWGE365OD6UY4HNT62FWSR"
         tag="Start Your Service"
         inputs={[{"name":"name","placeholder":"Your Name","required":true,"type":"text"},{"name":"email","required":true,"placeholder":"Your Email","type":"email"},{"type":"tel","placeholder":"Phone Number","required":false,"name":"phone"}]}
         title="Get a Free Quote Today"
