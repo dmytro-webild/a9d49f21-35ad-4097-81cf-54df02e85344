@@ -1,22 +1,17 @@
-// Created by add_section_from_catalog (ContactSplitForm).
-
 import React from 'react';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import ImageOrVideo from '@/components/ui/ImageOrVideo';
 
-export default function ContactSection(): React.JSX.Element {
+export default function ContactSection() {
   return (
-    <div data-webild-section="contact" data-section="contact" id="contact">
-      <ContactSplitForm
-        imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783797580612-sfro53pi.png"
-        textarea={{"required":true,"placeholder":"How can we help you?","name":"message","rows":4}}
-        textAnimation="fade-blur"
-        buttonText="Get a Quote"
-        buttonLink="https://checkout.square.site/merchant/MLFRQZQ7JR2T8/checkout/WOVWGE365OD6UY4HNT62FWSR"
-        tag="Start Your Service"
-        inputs={[{"name":"name","placeholder":"Your Name","required":true,"type":"text"},{"name":"email","required":true,"placeholder":"Your Email","type":"email"},{"type":"tel","placeholder":"Phone Number","required":false,"name":"phone"}]}
-        title="Get a Free Quote Today"
-        description="Call us at 407-498-6541 or email amerigrasscfl@gmail.com for a free quote or sign up today online."
-      />
-    </div>
+    <section data-webild-section="contact" id="contact" className="py-24 bg-background">
+      <div className="w-content-width mx-auto flex justify-center">
+        <div className="w-full max-w-4xl rounded-xl overflow-hidden shadow-2xl">
+          <ImageOrVideo 
+            imageSrc="https://storage.googleapis.com/webild/users/user_3GMdm7yk6wEN7W9hhWl6vUrowgd/uploaded-1783860744795-c29vvtqc.png"
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
   );
 }
